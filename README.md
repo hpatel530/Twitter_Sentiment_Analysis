@@ -32,7 +32,7 @@ The dataset contained over 9,000 tweets and after the initial observations and c
 * URL links are removed
 * Words are tokenized
 
-<img src = normalize.png >
+<img src = images/normalize.png >
 
 The diagram above is a general idea of the NLP pre-process. We used two different methods to create our tokens; word_tokenize() and nltk tweettokenizer(). Each method has the same concept but different execution. Word_tokenize() does a better job pre-processing urls and tweettokenizer() does a better job of preprocessing handles(@twitter_handle). After running the FreqDist() method we noticed both tokenizers yielded some common terms with high amount of frequency. We removed the following words:
 * "sxsw" which stands for south by southwest
@@ -43,15 +43,15 @@ The diagram above is a general idea of the NLP pre-process. We used two differen
 The words below are the most frequent words contained in the dataset using each tokenizer. The larger the word appears the more frequent it occured. 
 
 
-<img src = "top word tokenize.png" width="400" height="400">
+<img src = "images/top word tokenize.png" width="400" height="400">
 
-<img src = "top tweets tokenize.png" width="400" height="400">
+<img src = "images/top tweets tokenize.png" width="400" height="400">
 
 ### TF-IDF Vectorization
 
 Term frequency–inverse document frequency (tf-idf), is the vectorization method we chose. It's a numerical statistic that is intended to reflect how important a word is to a document in a collection. 
 
-<img src = tfidf.jpeg>
+<img src = images/tfidf.jpeg>
 
 ## Support Vector Machines
 
@@ -64,18 +64,18 @@ Support Vector Machines classifier was the chosen model as it outperformed Rando
 
 SVM  had an average accuracy score of .92 for the training data and an average accuracy score of .68 for the test data. 
 
-<img src = "matrix training.png" >
-<img src =matrix_testing.png >
+<img src = "images/matrix training.png" >
+<img src =images/matrix_testing.png >
 
 Below are the most common words for positive tweets, no emotion tweets, and negative tweets. There are common words in each category which made it difficult for the model to predict. Although the training data tested at 92%, there is a significant drop off at 68% on the testing data. 
 
-<img src ="positive_tweets.png" width=300>
-<img src ="neutral_tweets.png" width=300>
-<img src ="negative_tweets .png" width=300>
+<img src ="images/positive_tweets.png" width=300>
+<img src ="images/neutral_tweets.png" width=300>
+<img src ="images/negative_tweets .png" width=300>
 
 Below is an example of how the model is predicting one tweet and how the words are weighted for each classifier. 
 
-<img src = "Screen Shot 2020-11-14 at 8.22.14 PM.png">
+<img src = "images/Screen Shot 2020-11-14 at 8.22.14 PM.png">
 
 ## Recommendation
 
