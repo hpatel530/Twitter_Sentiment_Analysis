@@ -1,7 +1,7 @@
 
 # Twitter Sentiment Analysis on Apple & Google Products
 
-## Is a tweet Positive, Negative or Neutral?
+## Is a Tweet Positive, Negative or Neutral?
 
 ## By: Hiten Patel 
 
