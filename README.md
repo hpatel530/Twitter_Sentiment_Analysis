@@ -23,7 +23,7 @@ https://data.world/crowdflower/brands-and-product-emotions/workspace/file?filena
 
 ## The Process
 
-<img src = process_corpus.jpeg>
+<img src = images/process_corpus.jpeg>
 
 The dataset contained over 9,000 tweets and after the initial observations and clean up, we performed additional pre-processing methods for the Natural Language Process (NLP), which were the following:  
 
